@@ -9,7 +9,7 @@ int main() {
     }
 
     int n, m;
-    if (fscanf(f, "%d %d", &n, &m) != 2  n <= 0  m <= 0) {
+    if (fscanf(f, "%d %d", &n, &m) != 2 || n <= 0 || m <= 0){
         printf("Ошибка: неверный формат размеров матрицы!\n");
         fclose(f);
         return 1;
